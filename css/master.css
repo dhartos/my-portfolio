@@ -524,12 +524,12 @@ z-index: 10;
     margin-top: 32px;
 }
 .projects_images_bottom button {
-    width: 226px;
-    height: 85px;
-    border-radius: 20px;
-    font-size: 36px;
-    font-weight: 700;
-    cursor: pointer;
+  width: 226px;
+  height: 85px;
+  border-radius: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  cursor: pointer;
 }
 .projects_bottom_span {
     font-size: 24px;
