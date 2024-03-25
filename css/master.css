@@ -15,27 +15,75 @@ body {
     color: white;
   }
 
+  .about {
+    border: 1px solid transparent;
+    background: #382121;
+    color: white;
+}
+
 .horizontal_top {
     width: 100%;
     height: 5px;
     background-color: #ffffff;
-    /* margin-top: 115px; */
+    margin-top: 115px; 
+    border: none;
 }
-.ellipse{
+.ellipse {
     position: absolute;
     top: -168px;
     left: -302px;
     width: 700px;
     height: 700px;
-    opacity: 0.1;
-}
+    mix-blend-mode: soft-light;
+  }
+  
+  .ellipse_about {
+    position: absolute;
+    top: -287px;
+    right: -202px;
+    width: 700px;
+    height: 700px;
+    mix-blend-mode: soft-light;
+  }
+  .ellipse_case_top {
+    position: absolute;
+    top: -130px;
+    left: 0;
+    mix-blend-mode: soft-light;
+  }
+  .ellipse_big {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    mix-blend-mode: soft-light;
+  }
+  
+  .ellipse_middle {
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: soft-light;
+  }
+  
+  .ellipse_small {
+    position: absolute;
+    top: 550px;
+    right: 550px;
+    width: 40px;
+    height: 38px;
+    mix-blend-mode: soft-light;
+  }
+
 .onboarding_top{
     margin-left: 111px;
 }
 .onboarding_top h1{
     color: #F5F5F5;
     font-size: 96px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 115px;
 }
 .onboarding_top_paragraph{
     display: flex;
@@ -113,6 +161,7 @@ body {
     color: #000000;
     font-size: 96px;
     font-weight: 400;
+    margin-top: 20px;
 }
 .onboarding_bottom_cta{
     display: flex;
@@ -130,7 +179,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
     text-decoration: none;
     color: #000000;
@@ -145,65 +194,47 @@ body {
 }
 
 /*about page*/
-.about{
-    background-color: #382121;
-    color: #ffffff; 
+.about_content_all {
     display: flex;
-    width: 100%;
-    height: 100%;
 }
-.about_left{
-    /* width: 10%; */
-    background-color: #ffffff;
-    height: 10%;
-    margin: 0;
-    margin-right: 102px;
-    padding: 2% 3.5rem;
+.about_content_all_left {
+    border: none;
+    box-sizing: border-box;
+}
+.about_content_all_span {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.5rem;
+    height: 1540px;
+    width: 260px;
+    background-color: #ffffff;
 }
-.about_left span {
+.about_content_all_span {
     color: #000000;
-    font-size: 128px;
-    font-weight: bold;
-    text-align: center;
-    /* gap: 2rem; */
+  text-align: center;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 153.6px;
 }
-
 .about_right{
     position: relative;
-    width: 90%;
 }
 .about_horizontal {
-    position: absolute;
-    width: 100vw;
-    height: 2px;
-    background-color: #ffffff;
-    /* margin-top: 115px;
-    margin-left: -102px; */
-    top: 115px;
-    left: -102px;
-}
-.about_vertical {
-    position: absolute;
-    /* width: 10%; */
-    height: 2px;
-    background-color: #ffffff;
-    /* margin-top: 115px; */
-    /* margin-left: 102px; */
-    top: 0;
-    left: 102px;
-    rotate: 90deg;
-}
-.about_right_top{
     position: relative;
+    margin-left: 226px;
 }
-.top_content{
 
-}
+.graduation_image {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1219px;
+    gap: 131px;
+  }
+  .graduation_image img {
+    width: 200px;
+    height: 200px;
+  }
+
 .top_line{
     display: flex;
     justify-content: space-between;
@@ -213,7 +244,7 @@ body {
 .top_line h1{
     font-size: 64px;
     font-weight: 700;
-    line-height: 76px;
+    line-height: 76.8px;
     color: #F5F5F5;
 }
 .top_line button{
@@ -226,21 +257,22 @@ body {
     font-size: 36px;
     font-weight: 700;
     cursor: pointer;
+    z-index: 1;
 }
 .top_content p{
     width: 90%;
     font-size: 32px;
     font-weight: 500;
-    line-height: 38px;
+    line-height: 38.4px;
 }
-.aboutbutton{
+.about_button{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
     margin-top: 70px;
 }
-.aboutbutton button{
+.about_button button{
     background-color: #ffffff;
     color: #000000;
     width: 270px;
@@ -259,30 +291,44 @@ body {
     font-weight: 700;
 }
 .about_education{
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2px;
 }
 .about_education_content h2{
     font-size: 32px;
     font-weight: 600;
 }
+.about_education_content_all {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+  .about_education_content_head {
+    display: flex;
+  }
 .about_paragraph{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: -5px;
 }
 .about_paragraph p{
     font-size: 24px;
     font-weight: 500;
 }
 .about_paragraph span{
+    margin-top: -10px;
     font-size: 20px;
     font-weight: 400;
 }
+.span {
+    margin-bottom: 10px;
+}
 .about_mail{
     margin-top: 50px;
+    margin-left: 110px;
+    padding-bottom: 62px;
 }
 .about_mail span a{
     text-decoration: none;
@@ -292,8 +338,8 @@ body {
 }
 .about_image{
     position: absolute;
-    top: 500px;
-    right: -50px;
+    top: 1566px;
+    right: 0px;
 }
 .contact {
     display: flex;
@@ -362,6 +408,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     /* width: 100%;
     height: 100%; */
 }
@@ -547,7 +594,6 @@ z-index: 10;
     justify-content: space-between;
     margin: 0 129px;
     margin-top: 95px;
-    border: 2px solid red;
 }
 .Case_Study_Section button {
     width: 270px;
@@ -556,12 +602,19 @@ z-index: 10;
   font-weight: 700;
   color: #000000;
   border-radius: 20px;
-  border: 2px solid yellow;
   cursor: pointer;
 }
 .Case_Study_Section_others {
     display: flex;
-    border: 2px solid blue;
   flex-direction: column;
   gap: 30px;
+}
+
+/*Contact Page*/
+.contactPage {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
