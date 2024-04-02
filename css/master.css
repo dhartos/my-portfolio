@@ -625,8 +625,37 @@ z-index: 10;
 .desktop_images {
     display: flex;
     margin-left: 50px;
-    gap: 150px;
+    gap: 120px;
     margin-top: 70px;
+}
+.desktop_card {
+    display: block;
+    align-items: center;
+    margin-left: 20px;
+    width: 550px;
+}
+.desktop_card_top {
+    width: 500px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.desktop_card_top img {
+   object-fit: cover;
+   height: 400px;
+   width: 500px;
+}
+.desktop_text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.desktop_text p {
+    font-size: 20px;
+    font-weight: 300;
+    align-items: center;
 }
 .desktop_bottom button {
     width: 200px;
@@ -639,4 +668,18 @@ z-index: 10;
     color: #ffffff;
     border-color: #F5F5F5;
     margin-left: 120px; 
+    margin-top: 40px;
+}
+.desktop_bottom1 button {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #382121;
+    color: #ffffff;
+    border-color: #F5F5F5;
+    margin-left: 120px; 
+    margin-top: 70px;
 }
