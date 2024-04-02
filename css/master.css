@@ -197,18 +197,17 @@ body {
 .about_content_all {
     display: flex;
 }
-.about_content_all_left {
+.about_all_left {
     border: none;
     box-sizing: border-box;
 }
-.about_content_all_span {
+.about_all_span {
     display: flex;
     flex-direction: column;
-    height: 1540px;
-    width: 260px;
+    gap: 30px;
+    height: 100%;
+    width: 240px;
     background-color: #ffffff;
-}
-.about_content_all_span {
     color: #000000;
   text-align: center;
   font-size: 128px;
@@ -216,25 +215,8 @@ body {
   line-height: 153.6px;
 }
 .about_right{
-    position: relative;
+    margin-left: 20px;
 }
-.about_horizontal {
-    position: relative;
-    margin-left: 226px;
-}
-
-.graduation_image {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1219px;
-    gap: 131px;
-  }
-  .graduation_image img {
-    width: 200px;
-    height: 200px;
-  }
-
 .top_line{
     display: flex;
     justify-content: space-between;
@@ -265,9 +247,14 @@ body {
     font-weight: 500;
     line-height: 38.4px;
 }
-.about_button{
+.aboutbutton {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-top: 70px;
+}
+.about_button{
     align-items: center;
     width: 85%;
     margin-top: 70px;
@@ -282,6 +269,22 @@ body {
     font-weight: 700px;
     cursor: pointer;
 }
+.about_button1 {
+    align-items: center;
+    width: 85%;
+    margin-top: 70px;
+}
+.about_button1 button{
+    background-color: #382121;
+    color: #ffffff;
+    width: 270px;
+    height: 75px;
+    border-radius: 20px;
+    font-size: 36px;
+    font-weight: 700px;
+    cursor: pointer;
+    border-color: #ffffff;
+}
 .bottom_content{
     margin-top: 100px;
     position: relative;
@@ -291,8 +294,8 @@ body {
     font-weight: 700;
 }
 .about_education{
-    margin-top: 100px;
-    display: flex;
+    margin-top: 50px;
+    display: block;
     flex-direction: column;
     gap: 2px;
 }
@@ -300,14 +303,6 @@ body {
     font-size: 32px;
     font-weight: 600;
 }
-.about_education_content_all {
-    display: flex;
-    flex-direction: column;
-    margin-top: -20px;
-  }
-  .about_education_content_head {
-    display: flex;
-  }
 .about_paragraph{
     display: flex;
     flex-direction: column;
@@ -327,13 +322,12 @@ body {
 }
 .about_mail{
     margin-top: 50px;
-    margin-left: 110px;
-    padding-bottom: 62px;
+    margin-left: 10px;
 }
 .about_mail span a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
 .about_image{
