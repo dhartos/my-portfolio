@@ -636,14 +636,18 @@ z-index: 10;
 }
 .desktop_card_top {
     width: 500px;
-    height: 400px;
+    height: 550px;
     margin: 0;
     padding: 0;
 }
 .desktop_card_top img {
    object-fit: cover;
-   height: 400px;
+   height: 500px;
    width: 500px;
+}
+.desktop_text {
+    margin-top: 10px;
+    align-items: center;
 }
 .desktop_text h2 {
     font-size: 32px;
