@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0; 
     overflow-x: hidden;
+    background-color: #382121;
 }
 .home {
     background-color: #382121;
@@ -153,9 +154,17 @@ body {
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
+    z-index: 10;
+    cursor: pointer;
+}
+.onboarding_button a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
 }
 .onboarding_button1{
-    margin-right: 111px;
+    margin-right: 110px;
 }
 .onboarding_button1 button{
     width: 200px;
@@ -468,7 +477,7 @@ body {
     margin-top: 10px;
     margin-left: 139px;
 }
-.projects_heading button {
+.projects_heading button#homepage {
     width: 200px;
     height: 60px;
     background: transparent;
@@ -480,8 +489,14 @@ body {
     cursor: pointer;
     z-index: 10;
 }
+.projects_heading a {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
 .projects_heading h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 76.8px;
 }
@@ -503,11 +518,18 @@ border: none;
 cursor: pointer;
 z-index: 10;
 }
+.projects_heading_hire a {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
 .projects_images {
     display: flex;
-    justify-content: space-between;
-    margin: 0 139px;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 20px;
+    flex-direction: row;
 }
 .projects_images_project_card {
     width: 510px;
@@ -515,7 +537,7 @@ z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 50px;
 }
 .projects_images_project_top {
     padding-top: 21px;
@@ -528,7 +550,7 @@ z-index: 10;
 }
 .projects_images_project_top p {
     width: 322px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #000000;
 }
@@ -542,7 +564,7 @@ z-index: 10;
     border-radius: 20px;
     background: #382121;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 .projects_images_middle {
